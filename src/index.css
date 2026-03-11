@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  /* 은은하고 고급스러운 에메랄드빛 배경색 커스텀 (기존 stone 배경 대체) */
+  --color-stone-50: #F2FAF5; /* 아주 연하고 은은한 에메랄드/민트 배경 */
+  --color-stone-100: #E6F4EA; /* 살짝 더 진한 에메랄드 (호버/서브 배경) */
+  --color-stone-200: #D3EADD; /* 부드러운 에메랄드 톤 경계선 */
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-stone-50);
+}
