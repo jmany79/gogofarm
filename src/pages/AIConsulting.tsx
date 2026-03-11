@@ -108,7 +108,7 @@ export default function AIConsulting() {
 
   return (
     <div className="min-h-screen bg-stone-50 py-12 overflow-hidden">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -140,11 +140,11 @@ export default function AIConsulting() {
                     transition={{ duration: 0.3 }}
                     className={`flex ${msg.type === 'user' ? 'justify-end' : 'justify-start'}`}
                   >
-                    <div className={`flex max-w-[80%] ${msg.type === 'user' ? 'flex-row-reverse' : 'flex-row'}`}>
+                    <div className={`flex max-w-[90%] md:max-w-[85%] ${msg.type === 'user' ? 'flex-row-reverse' : 'flex-row'}`}>
                       <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 shadow-sm ${msg.type === 'user' ? 'bg-stone-200 ml-4' : 'bg-emerald-100 mr-4'}`}>
                         {msg.type === 'user' ? <User className="h-6 w-6 text-stone-600" /> : <Bot className="h-6 w-6 text-emerald-600" />}
                       </div>
-                      <div className={`p-4 rounded-2xl shadow-sm ${msg.type === 'user' ? 'bg-emerald-600 text-white rounded-tr-none' : 'bg-white border border-stone-100 text-stone-800 rounded-tl-none'} prose prose-sm max-w-none prose-emerald`}>
+                      <div className={`p-4 rounded-2xl shadow-sm ${msg.type === 'user' ? 'bg-emerald-600 text-white rounded-tr-none' : 'bg-white border border-stone-100 text-stone-800 rounded-tl-none'} prose prose-sm md:prose-base max-w-none prose-emerald`}>
                         <ReactMarkdown>{msg.text}</ReactMarkdown>
                       </div>
                     </div>
@@ -156,7 +156,7 @@ export default function AIConsulting() {
                     animate={{ opacity: 1, y: 0 }}
                     className="flex justify-start"
                   >
-                    <div className="flex max-w-[80%] flex-row">
+                    <div className="flex max-w-[90%] md:max-w-[85%] flex-row">
                       <div className="w-10 h-10 rounded-full flex items-center justify-center shrink-0 shadow-sm bg-emerald-100 mr-4">
                         <Bot className="h-6 w-6 text-emerald-600" />
                       </div>
