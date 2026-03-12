@@ -11,13 +11,13 @@ export default function Information() {
     { title: '귀농 농업창업 및 주택구입 지원', desc: '귀농 초기 안정적인 정착을 위해 농업창업(최대 3억원) 및 주택구입(최대 7,500만원) 융자 지원', target: '만 65세 이하 귀농인', tag: '창업/주택', link: 'https://www.greendaero.go.kr/' },
     { title: '청년후계농 영농정착 지원사업', desc: '만 40세 미만 청년 창업농에게 최장 3년간 월 최대 110만원의 영농정착지원금 지급', target: '만 18세~40세 미만', tag: '청년/생활비', link: 'https://www.agrix.go.kr/' },
     { title: '스마트팜 종합자금 지원', desc: '스마트팜 신축 및 개보수를 위한 시설 자금 지원 (연 1% 고정금리, 최대 30억원)', target: '스마트팜 창업 희망자', tag: '스마트팜/시설', link: 'https://smartfarmkorea.net/' },
-    { title: '귀농인 농지임대차 지원', desc: '한국농어촌공사를 통해 귀농인에게 적합한 농지를 장기 임대 및 임대료 일부 지원', target: '초기 귀농인', tag: '농지/임대', link: 'https://www.alimi.or.kr/' }
+    { title: '귀농인 농지임대차 지원', desc: '한국농어촌공사를 통해 귀농인에게 적합한 농지를 장기 임대 및 임대료 일부 지원', target: '초기 귀농인', tag: '농지/임대', link: 'https://www.greendaero.go.kr/' }
   ];
 
   const funds = [
     { title: '농업종합자금 (운전자금)', desc: '농업 경영에 소요되는 1년 이내의 단기 운영 자금 대출 지원 (연 2.5% 수준)', limit: '개인당 최대 5천만원', tag: '운영비', link: 'https://www.nhbank.com/' },
-    { title: '귀농인 보증지원 (농림수산업자신용보증기금)', desc: '담보력이 부족한 귀농인을 위해 농신보에서 신용보증서 발급 지원', limit: '최대 3억원 (보증비율 90%)', tag: '신용보증', link: 'https://www.nongshinbo.com/' },
-    { title: '지자체별 귀농 정착지원금', desc: '각 지자체 조례에 따라 전입 귀농인에게 1회성 정착 장려금 지급 (지자체별 상이)', limit: '100만원 ~ 500만원', tag: '지자체/보조금', link: 'https://www.returnfarm.com/' }
+    { title: '귀농인 보증지원 (농림수산업자신용보증기금)', desc: '담보력이 부족한 귀농인을 위해 농신보에서 신용보증서 발급 지원', limit: '최대 3억원 (보증비율 90%)', tag: '신용보증', link: 'https://www.greendaero.go.kr/' },
+    { title: '지자체별 귀농 정착지원금', desc: '각 지자체 조례에 따라 전입 귀농인에게 1회성 정착 장려금 지급 (지자체별 상이)', limit: '100만원 ~ 500만원', tag: '지자체/보조금', link: 'https://www.greendaero.go.kr/' }
   ];
 
   const educations = [
@@ -30,15 +30,15 @@ export default function Information() {
   const procedures = [
     { title: '1단계: 귀농 결심 및 정보 수집', desc: '가족과의 합의, 귀농 목적 설정, 관련 기관 및 지자체 상담을 통한 기초 정보 수집', type: '준비기', tag: '정보수집', link: 'https://www.greendaero.go.kr/' },
     { title: '2단계: 영농 기술 습득', desc: '귀농귀촌종합센터, 농업기술원 등의 교육 프로그램 이수 및 선도농가 현장 실습', type: '교육기', tag: '기술습득', link: 'https://www.agriedu.net/' },
-    { title: '3단계: 정착지 및 농지 탐색', desc: '재배 희망 작물에 적합한 기후, 토양 조건 및 생활 인프라를 고려한 지역 선정', type: '탐색기', tag: '지역선정', link: 'https://www.alimi.or.kr/' },
+    { title: '3단계: 정착지 및 농지 탐색', desc: '재배 희망 작물에 적합한 기후, 토양 조건 및 생활 인프라를 고려한 지역 선정', type: '탐색기', tag: '지역선정', link: 'https://www.greendaero.go.kr/' },
     { title: '4단계: 영농 계획 수립 및 정착', desc: '구체적인 사업계획서 작성, 농지 및 주택 구입, 농업경영체 등록 후 본격 영농 시작', type: '실행기', tag: '정착', link: 'https://uni.agrix.go.kr/' }
   ];
 
   const trends = [
     { title: '스마트 농업의 가속화', desc: 'AI, IoT, 빅데이터를 활용한 정밀 농업 및 스마트팜 보급 확대로 생산성 향상', type: '기술/혁신', tag: '스마트팜', link: 'https://smartfarmkorea.net/' },
     { title: '저탄소 친환경 농업 부상', desc: '기후 변화에 대응하기 위한 탄소 저감 농법, 유기농 및 무농약 재배에 대한 수요 증가', type: '환경/지속가능성', tag: '친환경', link: 'https://www.enviagro.go.kr/' },
-    { title: '농촌 융복합산업(6차 산업) 활성화', desc: '단순 생산(1차)을 넘어 가공(2차), 체험/관광(3차)을 결합한 새로운 부가가치 창출', type: '비즈니스 모델', tag: '6차산업', link: 'https://www.6차산업.com/' },
-    { title: '푸드테크와 대체 식품', desc: '식물성 대체육, 배양육, 곤충 식품 등 미래 식량 자원 개발 및 관련 스타트업 증가', type: '미래식량', tag: '푸드테크', link: 'https://www.foodtech.or.kr/' }
+    { title: '농촌 융복합산업(6차 산업) 활성화', desc: '단순 생산(1차)을 넘어 가공(2차), 체험/관광(3차)을 결합한 새로운 부가가치 창출', type: '비즈니스 모델', tag: '6차산업', link: 'https://www.enviagro.go.kr/portal/' },
+    { title: '푸드테크와 대체 식품', desc: '식물성 대체육, 배양육, 곤충 식품 등 미래 식량 자원 개발 및 관련 스타트업 증가', type: '미래식량', tag: '푸드테크', link: 'https://www.enviagro.go.kr/portal/' }
   ];
 
   const filterList = (list: any[]) => {
